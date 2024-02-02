@@ -74,3 +74,55 @@ body {
 .suggestion-search:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  /* outline: 3px solid red; */
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.card-section {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 40px 10px;
+  padding: 10px;
+  /* border: 1px solid #ddd; */
+  border-radius: 24px;
+}
+.card img {
+  max-width: 100%;
+  margin: auto 0;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+.card h3 {
+  margin-top: auto;
+}
+
+.copy-sign {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.card img:hover {
+  opacity: 0.4;
+}
