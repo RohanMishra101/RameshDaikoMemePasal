@@ -1,4 +1,4 @@
-@import "./media.css";
+/* @import "./media.css"; */
 
 * {
   margin: 0;
@@ -35,7 +35,7 @@ body {
 
 .logo {
   margin-bottom: 30px;
-  /* outline: 2px solid blue; */
+  outline: 2px solid blue;
   transition: height 1.5s ease-in-out;
   animation: incHeight 2s ease-in-out;
   /* animation-delay: 1s; */
@@ -74,23 +74,25 @@ body {
 /* Search Section */
 .search_Section {
   margin-bottom: 50px;
+  /* outline: 2px solid blue; */
 }
 .search_bar {
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 700px;
-  padding: 10px 20px;
+  padding: 6px 20px;
   border-radius: 50px;
+  /* outline: 1px solid red; */
   background: rgba(255, 255, 255, 0.2);
 }
 .search_bar input[type="text"] {
-  width: 650px;
+  width: 700px;
   padding: 3px;
   border: none;
   outline: none;
-  font-size: 32px;
+  font-size: 2rem;
   background: transparent;
-  color: white;
+  color: var(--primary-color);
   font-size: 28px;
   font-weight: 500;
 }
@@ -100,7 +102,7 @@ body {
 
 .searchBtn {
   background: transparent;
-  border: none;
+  /* border: none; */
   width: 75px;
   height: 60px;
   border-radius: 50px;
@@ -135,7 +137,7 @@ body {
   max-width: 80%;
   margin: 0 auto;
   padding: 20px;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
   border-radius: 20px;
   margin-bottom: 20px;
 }
@@ -144,6 +146,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   padding: 30px;
+  outline: 2px solid blue;
 }
 .card-container > ul > li {
   background: var(--card-bg-color);
@@ -153,6 +156,7 @@ body {
   margin: 0 auto;
   margin-bottom: 1rem;
   border-radius: 13px;
+  outline: 2px solid blue;
 }
 .card-container > ul > li:hover > hr {
   border: 3px solid white;
